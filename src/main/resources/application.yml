@@ -70,3 +70,12 @@ spring:
 api:
   payment:
     url: http://payment:8080
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 600
